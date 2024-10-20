@@ -1,0 +1,47 @@
+public class Main {
+    public static void main(String[] args) throws Exception {
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+
+        int ika = 10; 
+
+        // Tulostusehdot
+        if (ika >= 0 && ika < 18) {
+            System.out.println("Olet alaikäinen");
+            if (ika >= 15) {
+                System.err.println("Saat ajaa mopoa");
+            }
+            if (ika >= 16) {
+                System.out.println("Saat ajaa kevaria");
+            }
+        } 
+        else if (ika == 18) {
+            System.out.println("Onnea olet täysi-ikäinen ja saat ajaa autoa");
+        } 
+        else if (ika >= 65) {
+            System.out.println("Olet eläkeläinen.");
+            if (ika <= 65) {
+                System.out.println("hyviä eläkepäiviä");
+            }
+        } 
+        else if (ika == 100) {
+            System.out.println("Onnea olet 100-vuotias");
+        } 
+        else if (ika >= 58) {
+            System.out.println("Voit jäädä varhaiseläkkeelle.");
+        } 
+        else if (ika >= 40 && ika <= 50) {
+            System.out.println("Parasta keski-ikää");
+        } 
+        if(ika % 10 == 0)
+            {
+                System.out.println("Onnittelut tasavuosikymmenistä");
+            }
+
+        else {
+            System.out.println("Olet aikuinen");
+        }
+    }
+}
+
